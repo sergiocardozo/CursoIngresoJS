@@ -3,61 +3,69 @@ transformarlos a enteros (parseInt),realizar la operación correcta y
 mostrar el resulto por medio de "ALERT"
 ej.: "la Resta es 750"*/ 
 function sumar()
-{	var  num1;
-	var  num2;
-    var  sumar;
+{	
+    var num1
+    var num2
+    var suma
 
-num1 = parseInt(document.getElementById("numeroUno").value);
-num2 = parseInt(document.getElementById("numeroDos").value);
+    num1 = parseInt(document.getElementById("numeroUno").value);
+    num2 = parseInt(document.getElementById("numeroDos").value);
 
-sumar = num1 + num2;
+    suma = num1 + num2;
 
-alert("La suma es " + sumar );
+    alert("La suma es: " + suma);
+
 
 }
 
 function restar()
 {
-	var  num1;
-	var  num2;
-    var  restar;
+    var num1
+    var num2
+    var resta
 
-num1=parseInt(document.getElementById("numeroUno").value);
-num2=parseInt(document.getElementById("numeroDos").value);
+    num1 = parseInt(document.getElementById("numeroUno").value);
+    num2 = parseInt(document.getElementById("numeroDos").value);
 
-restar = num1 - num2;
+    resta = num1 - num2;
 
-alert("La resta es " + restar );
+    alert("La resta es: " + resta);
+
+
 
 }
 
 function multiplicar()
 { 
-	var  num1;
-	var  num2;
-    var  multiplicar;
+    var num1
+    var num2
+    var multiplo
 
-num1=parseInt(document.getElementById("numeroUno").value);
-num2=parseInt(document.getElementById("numeroDos").value);
+    num1 = parseInt(document.getElementById("numeroUno").value);
+    num2 = parseInt(document.getElementById("numeroDos").value);
 
-multiplicar = num1 * num2;
+    multiplo = num1 * num2;
 
-alert("La multiplicacion es " + multiplicar );
+    alert("El multiplo es: " + multiplo);
 
+
+
+	
 }
 
 function dividir()
 {
-	var  num1;
-	var  num2;
-    var  dividir;
+    var num1
+    var num2
+    var division
 
-num1=parseInt(document.getElementById("numeroUno").value);
-num2=parseInt(document.getElementById("numeroDos").value);
+    num1 = parseInt(document.getElementById("numeroUno").value);
+    num2 = parseInt(document.getElementById("numeroDos").value);
 
-dividir = num1 / num2;
+    division = num1 / num2;
 
-alert("La division es " + dividir );
+    alert("El resultado de la division es: " + division);
 
+    
 }
 
