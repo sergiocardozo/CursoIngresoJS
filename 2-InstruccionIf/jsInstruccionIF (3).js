@@ -12,7 +12,7 @@ if (edad >= 18) {
 
     }
 
-else if (edad < 18) {
+else {
 
      alert("Es menor");
 
