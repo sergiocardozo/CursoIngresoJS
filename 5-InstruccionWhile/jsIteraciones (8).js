@@ -4,30 +4,37 @@ function mostrar()
 	var contador=0;
 	var positivo=0;
 	var negativo=1;
-	var numero ;
+	var numero;
 	var respuesta;
 
 	do { 
-		numero = parseInt(prompt (" Ingrese un numero :"));
 
-			while ( isNaN(numero)) {
-				prompt ("Vuelva a ingresar ");
+		numero = parseInt ( prompt ("Ingrese un numero "));
 
-			}
-				if ( positivo >= 0 ) {
+		while ( isNaN (numero )) {
 
-						positivo = positivo + numero ;
-				}
+			numero = prompt ( "Error. Ingrese un nuevo numero : ");
 
-				else {
+		}
 
-					negativo = negativo *  numero ; 
-				}
-		respuesta = prompt (" Quiere seguir ingresando ?")
-		
+		if (numero >= 0 ) {
 
-	} while ( respuesta == "s" );
+			positivo = positivo + numero ;
 
+		}
+
+		else  {
+
+			negativo = negativo * numero ;
+
+		}
+
+		respuesta = prompt ( "Desea continuar ingresando numeros ? : ");
+
+
+	}
+
+	while ( respuesta == "s")
 
 document.getElementById('suma').value=positivo;
 document.getElementById('producto').value=negativo;

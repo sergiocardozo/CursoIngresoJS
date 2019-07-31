@@ -2,34 +2,40 @@ function mostrar()
 {
 
 	var contador=0;
-	var maximo;
-	var minimo;
+	// declarar variables
 	var numero;
+	var maximo = 0;
+	var minimo = 0;
 	var respuesta;
-	var flag = 0;
 
 
-	do	{ 
-		numero = parseInt ( prompt ( "Ingrese un numero : "));
+	do {
 
-		if ( numero > maximo || flag == 0) {
+		numero = parseInt ( prompt (" Ingrese un numero : "));
 
-			numero = maximo 
-		}	
+		if ( numero > maximo ) {
 
-		if ( numero < minimo || flag == 1 ) {
+			numero = maximo;
 
-			numero = minimo
+			maximo++;
+
 		}
-	
-		respuesta = prompt (" Desea ingreser un nuevo numero : ")
+		if (numero < minimo) {
+
+			numero = minimo;
+
+			minimo++;
+		}
+
+		respuesta = prompt ("Desea ingresar un nuevo numero :");
+
+
 	}
+	while(respuesta == "s");
+	
 
-	while (respuesta = "s");
-
-	document.getElementById("maximo").value = maximo;
-	document.getElementById("minimo").value = minimo;
-
+		document.getElementById("maximo").value = maximo;
+		document.getElementById("minimo").value = minimo;
 
 
 }//FIN DE LA FUNCIÓN
