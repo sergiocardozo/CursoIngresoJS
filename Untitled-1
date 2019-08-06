@@ -1,0 +1,39 @@
+
+var marca;
+var peso;
+var temperatura;
+var contTempPar = 0;
+var seguir;
+var mayorPeso = 0;
+var produmenorcero = 0;
+
+
+
+--------------------- TEMPERATURA PAR ---------------
+
+if ( temperatura % 2 == 0 ) {  // numero par divide por dos y lo igualo a 0 
+    contTempPar++;
+    }
+if ( peso > maximo || flag == 0 ) { // if (peso > mayorPeso || flag == 0){
+                                            mayorPeso = peso;
+                                            marcapesada = marca;
+                                            flag = 1;
+    
+    maximo = peso;
+    marcapesada = marca;
+    }
+if ( peso < minimo ) {
+    marcapesada = marca;
+    flag = 1 
+    }
+
+if ( temperatura < 0 ) {
+
+    produmenorcero++; 
+    
+    }
+
+
+
+document.write ( "Cantidad de temperaturas pares : " + contTempPar + "<br>");
+document.write ("El producto mas pesado es : + marcapesada + " Peso " + peso + "<br>");
