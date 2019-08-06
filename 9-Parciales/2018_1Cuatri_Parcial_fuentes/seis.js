@@ -4,7 +4,7 @@ function mostrar()
 
        hora = document.getElementById ("laHora").value;
 
-        if ( hora > 24 || hora < 0 || isNaN(hora)){ 
+        if ( hora > 24 || hora < 0 || isNaN(hora) || hora != null ){ 
 
                 alert ("Error. la hora no es valida ");
          }
@@ -34,13 +34,13 @@ function mostrar()
             
             default : 
                 alert ("Es de noche");
-
+                break;
+        }
                 if ( hora >= 20 && hora <= 24 || hora >= 0 && hora <= 5){ 
                 alert ("a dormir");
                 
                 
-                     }
- }
+                 }
         }
 
 
